@@ -24,10 +24,8 @@
 4. Undistort the conveyor images
 5. Rectification
 
-## Part2: Track Object
-- update 05.07.2020 Add classification. Now all the commends are written in English.   
-See ./scr/main.py.  
-In this part, I use BackgroundSubstracker(BS) to detect moving objects in a frame. To initialize the process, one should select two ROI mannually, one is thought to be the entry of the conveyor while the other one is the exit. After that, as illustrated in the fiugres below, a white conveyor model is made.  
+## Part2: Track Object  
+In this part, BackgroundSubstracker(BS) is used to detect moving objects in a frame. To initialize the process, one ought to select two ROI mannually, one is thought to be the entry of the conveyor while the other one is the exit. After that, as illustrated in the fiugres below, a white conveyor model is made.  
 ![avatar](/pics/entry.jpg)  
 ![avatar](/pics/exit.jpg)  
 ![avatar](/pics/conveyor.jpg)  
@@ -37,6 +35,9 @@ Once it enters the entry we gave before, the green box will become a red one. Bo
 ![avatar](/pics/view.jpg)  
 If the object is under occlusion, predict it according to the path history.  
 ![avatar](/pics/predict.jpg)  
+
+## Part3: Classification
+CNN
 
 
  
