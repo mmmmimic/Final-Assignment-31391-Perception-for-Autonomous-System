@@ -18,11 +18,12 @@
 ## Part1: Calibration and Rectification
 
 ### process
-1. Calibrate the camera
-2. Undistort the checkboard images
-3. Recalibrate the camera
-4. Undistort the conveyor images
-5. Rectification
+~~1. Calibrate the camera~~
+~~2. Undistort the checkboard images~~
+~~3. Recalibrate the camera~~
+~~4. Undistort the conveyor images~~
+~~5. Rectification~~
+MATLAB Stereo Calibration Toolbox
 
 ## Part2: Track Object  
 In this part, BackgroundSubstracker(BS) is used to detect moving objects in a frame. To initialize the process, one ought to select two ROI mannually, one is thought to be the entry of the conveyor while the other one is the exit. After that, as illustrated in the fiugres below, a white conveyor model is made.  
