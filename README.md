@@ -39,6 +39,8 @@ If the object is under occlusion, predict it according to the path history.
 
 ## Part3: Classification
 CNN
+## Results
+https://www.youtube.com/watch?v=GWvI1aQguXo
 
 
  
