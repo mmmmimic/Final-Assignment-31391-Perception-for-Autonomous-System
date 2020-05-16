@@ -482,7 +482,7 @@ class Tracker(object):
             # focal length of the camera
             fl = 702.75482843
             # baseline
-            bl = math.sqrt(((-3.56973024)**2+(-0.00914604)**2+0.02945485**2))
+            bl = math.sqrt(((-120)**2+(-0.00914604)**2+0.02945485**2))
             self.depth = self.depth/(700*3.5)*fl*bl
             #the max depth is set to be 100
             self.depth[self.depth>100] = 0
