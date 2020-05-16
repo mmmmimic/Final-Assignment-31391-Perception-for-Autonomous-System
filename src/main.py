@@ -480,9 +480,9 @@ class Tracker(object):
             self.depth = np.load('depthOcc/'+f'{i+1:04d}.npy')
             # adjust the depth(because the former depth data is not so exact, the focal length is 700 and basiline is 3.5)
             # focal length of the camera
-            fl = 702.75482843
+            fl = 704.4922
             # baseline
-            bl = math.sqrt(((-120)**2+(-0.00914604)**2+0.02945485**2))
+            bl = math.sqrt(((-120.0307)**2+(-0.2427)**2+(-0.4453)**2))
             self.depth = self.depth/(700*3.5)*fl*bl
             #the max depth is set to be 100
             self.depth[self.depth>100] = 0
